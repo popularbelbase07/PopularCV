@@ -3,7 +3,7 @@
 /*===== VARIABLES CSS =====*/
 :root{
   --header-height: 5rem;
-  --font-semi: 600;
+  --font-semi: 400;
 }
 
 /*===== Colores =====*/
@@ -21,13 +21,13 @@
 }
 @media screen and (min-width: 768px){
   :root{
-    --big-font-size: 3.5rem;
-    --h2-font-size: 2rem;
+    --big-font-size: 2.5rem;
+    --h2-font-size: 1.5rem;
     --normal-font-size: 1rem;
   }
 }
 
-/*===== Margenes =====*/
+/*===== Margins =====*/
 :root{
   --mb-1: 0.5rem;
   --mb-2: 1rem;
@@ -216,12 +216,35 @@ img{
 .home__img{
   position: absolute;
   right: 20px;
-  bottom: 120px;
-  margin: 0px -150px 5px;
-  width: 200px;
+  bottom: 50px;
+  margin: 0px 0px 5px;
+  width: 500px;
+  height: 400px;
 }
 
-/*BUTTONS*/
+
+@media only screen and (max-width: 350px ) {
+  .home__img{
+    width: 200px;
+    margin: 0px -50px 100px;
+    
+  }
+  
+}
+
+@media screen and (min-width:350px) and (max-width:750px){
+    .home__img{
+      width: 300px;
+      height: auto;
+      margin: 0px -50px 270px;
+
+} 
+ 
+}
+   
+
+
+
 /* .button{
   display: inline-block;
   background-color: var(--first-color);
@@ -238,14 +261,16 @@ img{
 .about__container{
   row-gap: 1.5rem;
   text-align: center;
+ 
 }
 .about__subtitle{
   margin-bottom: var(--mb-3);
 }
 .class__text{
-  font-size: small;
+  font-size: big;
   font-style: italic;
   font-weight:var(--font-semi);
+  margin: 20px 20px;
 }
 .about__img{
   justify-self: center;
@@ -369,6 +394,7 @@ img{
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
+
 }
 .footer__title{
   font-size: 2rem;
@@ -402,6 +428,7 @@ img{
 
   .nav{
     height: calc(var(--header-height) + 1rem);
+    color: darkgray;
   }
   .nav__list{
     display: flex;
